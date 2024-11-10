@@ -70,6 +70,11 @@ Follow these steps to get the project running locally:
 
 This should be ready for use in project!
 
+![Alt text](<./src/assets/App%20Screenshots/Screenshot%20(57).png>)
+![Alt text](<./src/assets/App%20Screenshots/Screenshot%20(58).png>)
+![Alt text](<./src/assets/App%20Screenshots/Screenshot%20(59).png>)
+![Alt text](<./src/assets/App%20Screenshots/Screenshot%20(55).png>)
+![Alt text](<./src/assets/App%20Screenshots/Screenshot%20(56).png>)
 
 
 
