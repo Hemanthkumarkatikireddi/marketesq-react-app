@@ -65,13 +65,11 @@ Follow these steps to get the project running locally:
    
 
 
+### Deployment Link: Added my live deployment link [Brisphere Live App](https://marketesq-react-app-2.onrender.com).
 
-### Key Changes:
-- **Deployment Link**: Added your live deployment link [Brisphere Live App](https://marketesq-react-app-2.onrender.com).
-- You can replace `path_to_screenshot.png` with your actual screenshot URL if you'd like to add any images. 
-- Replace the placeholder email (`your-email@example.com`) with your actual email if you want to provide contact information.
 
-This should be ready for you to use in your project!
+This should be ready for use in project!
+
 
 
 
