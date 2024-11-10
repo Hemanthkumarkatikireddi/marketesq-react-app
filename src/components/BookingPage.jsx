@@ -34,7 +34,7 @@ const BookingPage = () => {
     setUser((preUser) => ({
       ...preUser,
       rooms: Math.max(1, preUser.rooms + increase),
-      cost: Math.max(1, preUser.cost + 12430),
+      cost: Math.max(1, preUser.cost + increase),
     }));
   };
 
@@ -148,14 +148,14 @@ const BookingPage = () => {
                 <h2 className="text-sm lg:text-base md:tex-lg">ROOMS</h2>
                 <div className="flex justify-center items-center ">
                   <CiCircleMinus
-                    onClick={() => RoomBook(-1)}
+                    onClick={() => RoomBook(-12430)}
                     className="mr-4 size-5 hover:bg-black rounded-full hover:text-white cursor-pointer"
                   />
                   <div className="text-xs md:text-sm lg:text-base font-bold">
                     {user.rooms}
                   </div>
                   <CiCirclePlus
-                    onClick={() => RoomBook(1)}
+                    onClick={() => RoomBook(12430)}
                     className="ml-4 size-5 hover:bg-black rounded-full hover:text-white cursor-pointer"
                   />
                 </div>
