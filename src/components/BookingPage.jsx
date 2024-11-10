@@ -31,10 +31,12 @@ const BookingPage = () => {
   };
 
   const RoomBook = (increase) => {
+    console.log(increase);
+    const amount = increase === 1 ? 12430 : -12430;
     setUser((preUser) => ({
       ...preUser,
       rooms: Math.max(1, preUser.rooms + increase),
-      cost: Math.max(1, preUser.cost + increase),
+      cost: Math.max(12430, preUser.cost + amount),
     }));
   };
 
@@ -148,14 +150,14 @@ const BookingPage = () => {
                 <h2 className="text-sm lg:text-base md:tex-lg">ROOMS</h2>
                 <div className="flex justify-center items-center ">
                   <CiCircleMinus
-                    onClick={() => RoomBook(-12430)}
+                    onClick={() => RoomBook(-1)}
                     className="mr-4 size-5 hover:bg-black rounded-full hover:text-white cursor-pointer"
                   />
                   <div className="text-xs md:text-sm lg:text-base font-bold">
                     {user.rooms}
                   </div>
                   <CiCirclePlus
-                    onClick={() => RoomBook(12430)}
+                    onClick={() => RoomBook(1)}
                     className="ml-4 size-5 hover:bg-black rounded-full hover:text-white cursor-pointer"
                   />
                 </div>
@@ -167,7 +169,9 @@ const BookingPage = () => {
             >
               <Link to={page} state={{ user }}>
                 <div className="grid grid-cols-6 text-xs md:text-lg lg:text-base btn  text-gray-200 font-semibold items-center  rounded-md border-none  md:w-[150px] text-center ">
-                  <span className="col-span-5 p-2">₹ {user.cost}</span>
+                  <span className="col-span-5 p-2">
+                    ₹ {user.rooms <= 1 ? 12430 : user.cost}
+                  </span>
                   <div className="bg-cyan-950 pl-2 pr-2 border-r-md rounded-md rounded-l-none col-span-1 flex items-center justify-end">
                     <FaArrowRight className="size-[40px] text-white" />
                   </div>
